@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.my.MainActivity">
+    <item
+        android:id="@+id/i_1"
+        android:orderInCategory="100"
+        android:title="插入"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/i_2"
+        android:orderInCategory="100"
+        android:title="查询"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/i_3"
+        android:orderInCategory="100"
+        android:title="删除"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/i_4"
+        android:orderInCategory="100"
+        android:title="修改"
+        app:showAsAction="never" />
+</menu>
