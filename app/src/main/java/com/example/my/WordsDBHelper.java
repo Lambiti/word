@@ -18,7 +18,7 @@ private final static String SQL_CREATE_DATABASE = "create table "
 
 private  final static  String SQL_DELETE_DATABASE = "DROP TABLE IF EXISTS " + Words.Word.TABLE_NAME;
 
-    public WordsDBHelper(Context context, String s, Object o, int i) {
+    public WordsDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

@@ -28,7 +28,7 @@ private List<Words> wordsList = new ArrayList<>();
         editText_1 =  (EditText)findViewById(R.id.Edittext_1);
         editText_2 = (EditText)findViewById(R.id.Edittext_5);
         editText_3 = (EditText)findViewById(R.id.Edittext_6);
-        final WordsDBHelper wordsDBHelper = new WordsDBHelper(this,"BookStore",null,2);
+        final WordsDBHelper wordsDBHelper = new WordsDBHelper(this);
 
         Button addbt = (Button)findViewById(R.id.bt_2);
         addbt.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +45,7 @@ private List<Words> wordsList = new ArrayList<>();
                 contentValues.put("meaning",meaning1);
                 contentValues.put("sample",sample1);
                 database.insert("words",null,contentValues);
+
 
                Log.d("MainActivity","插入成功");
                Log.d("MainActivity","word is " + word1);

@@ -12,14 +12,16 @@
         android:orderInCategory="100"
         android:title="查询"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/i_3"
+    <item android:id="@+id/action_translate1"
+          android:title="在线查询"
+          android:orderInCategory="100"
+          app:showAsAction="never" />
+    <item android:id="@+id/help"
+        android:title="帮助"
         android:orderInCategory="100"
-        android:title="删除"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/i_4"
+    <item android:id="@+id/ref"
+        android:title="刷新"
         android:orderInCategory="100"
-        android:title="修改"
         app:showAsAction="never" />
 </menu>
