@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.my">
+    package="com.example.wordbook">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:networkSecurityConfig="@xml/http_set"
+        android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="word"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".insert_Activity" />
-        <activity android:name=".chaxun_Activity" />
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+        <activity android:name=".Translate_Activity"></activity>
+        <activity android:name=".News_Activity" />
+        <activity android:name=".Select_List_Activity" />
+        <activity android:name=".Word_Details_Activiity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

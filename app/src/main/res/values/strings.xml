@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">my 单词本</string>
+    <string name="app_name">WordBook</string>
     <string name="action_settings">Settings</string>
 </resources>
